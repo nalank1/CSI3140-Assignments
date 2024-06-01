@@ -80,6 +80,19 @@ h2 {
     padding-top: 20px
 }
 
+.experience-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+  
+.experience1,
+.experience2 {
+    flex: 1;
+    padding: 10px;
+    padding-top: 20px
+}
+
 /* Navigation */
 nav {
   z-index: 10;
@@ -183,7 +196,8 @@ button:hover:not(.outline) {
   color: var(--on-primary);
 }
 
-.text-box {
+.text-box
+.text1-box {
   width: 40%;
   text-align: justify;
   background: rgb(0 0 0 / 50%);
@@ -192,6 +206,21 @@ button:hover:not(.outline) {
   padding: 30px;
   margin-top: 15px;
 }
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+  
+.text-box,
+.text1-box {
+    flex: 1;
+    padding: 10px;
+    padding-top: 20px
+}
+
+
 
 p {
   margin: 0;
