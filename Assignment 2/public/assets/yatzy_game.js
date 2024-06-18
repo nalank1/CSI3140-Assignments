@@ -69,7 +69,13 @@ function displayMessage(message) {
 
 document.getElementById('roll-button').addEventListener('click', rollDice);
 for (let i = 0; i < 5; i++) {
-    document.getElementById(`die${i + 1}`).addEventListener('click', () => toggleKeep(i));
+    document.getElementById(`die${i + 1}`).addEventListener('click', () => {
+        if (keep[i]) {
+            reRollDie(i);
+        } else {
+            keepDie(i);
+        }
+    });
 }
 
 function initializeGame() {
